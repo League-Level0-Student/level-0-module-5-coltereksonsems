@@ -10,8 +10,13 @@ public class Primeornot {
 		String prime =JOptionPane.showInputDialog("Please enter a number");
 		int number=Integer.parseInt(prime);
 		
-		
-		
+		for (int i = 2; i < number; i++) {
+			if (number % i ==0) {
+				JOptionPane.showMessageDialog(null,"This number is not prime.");
+				System.exit(0);
+			}
+		}
+		JOptionPane.showMessageDialog(null,"This number is prime.");
 		
 		
 		
