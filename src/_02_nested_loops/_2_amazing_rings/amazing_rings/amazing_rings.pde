@@ -5,7 +5,9 @@ void setup() {
 }
 int x1 = 250;
 int x2 = 750;
+int speed = 1;
 void draw() {
+  background(#FFFFFF);
    int size = 400 ;
    for(int i = 8; i>0; i--){
    noFill();
@@ -18,8 +20,11 @@ void draw() {
     ellipse(x2,250,size,size);
     size-=50;
   }
-  x1 += 1;
-  x2 -= 1;
+  if(x1==900 | x1==-100) {
+ speed*=-1;
+  }
+  x1 += speed;
+  x2 -= speed;
   
   // Go to the recipe to run the demonstration before starting this program
   
