@@ -8,7 +8,8 @@ public class ForLoopGauntlet {
 		// loopTwo();
 		// loopThree();
 		//loopFour();
-		loopFive();
+		//loopFive();
+	  	  loopSix();
 	}
 
 	static void loopOne() {
@@ -45,7 +46,13 @@ static void loopFive() {
 
 			if (i % 2 == 1)
 				System.out.println(i);
-}}}
+}}
+static void loopSix() {
+	for (int i = 7; i < 777; i++) {
+		System.out.println(i);
+	}
+}
+}
 		
 		
 		
