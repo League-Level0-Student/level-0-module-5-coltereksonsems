@@ -9,7 +9,8 @@ public class ForLoopGauntlet {
 		// loopThree();
 		//loopFour();
 		//loopFive();
-	  	  loopSix();
+	  	  //loopSix();
+		//loopSeven();
 	}
 
 	static void loopOne() {
@@ -48,10 +49,22 @@ static void loopFive() {
 				System.out.println(i);
 }}
 static void loopSix() {
-	for (int i = 7; i < 777; i++) {
+	for (int i = 7; i < 784; i+=7) {
 		System.out.println(i);
 	}
 }
+
+static void loopSeven (){
+	int age = 0;
+	for (int i = 2008; i < 2021; i++) {
+		System.out.println("in "+(i)+" i was "+(age)+" years old."); 
+		age++;
+	}
+}
+
+
+
+
 }
 		
 		
