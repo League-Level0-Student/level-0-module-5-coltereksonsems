@@ -77,10 +77,11 @@ public class ForLoopGauntlet {
 	}
 		static void loopNine (){
 			
-			for (int i = 0; i < 3; i++) {
-				for (int j = 0; j < 3; j++) {
-				System.out.println(j+i);	
-				}
+			for (int i = 1; i <= 7; i+=3) {
+				for (int j = 7; j <= 9; j++) {
+				System.out.print(j+i);	
+				}  
+				System.out.println();
 			}
 			
 		}
