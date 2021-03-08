@@ -12,7 +12,9 @@ public class ForLoopGauntlet {
 		// loopSix();
 		// loopSeven();
 		//loopEight();
-		  loopNine();
+		  //loopNine();
+		//loopTen();
+		loopEleven();
 	}
 
 	static void loopOne() {
@@ -78,14 +80,33 @@ public class ForLoopGauntlet {
 		static void loopNine (){
 			
 			for (int i = 1; i <= 7; i+=3) {
-				for (int j = 7; j <= 9; j++) {
-				System.out.print(j+i);	
+				for (int j=i; j <= i+2; j++) {
+				System.out.print(j);	
 				}  
 				System.out.println();
 			}
 			
 		}
-		
+static void loopTen (){
+	// for(int i = 0;              i < 10;       i++)
+	//   start of loop counter    condition    increment/decrementer
+			
+			for (int i = 1; i <= 100; i+=10) {
+				for (int j=i; j <= i+9; j++) {
+				System.out.print(j);	
+				}  
+				System.out.println();
 	
-
+			}}
+static void loopEleven (){
+	// for(int i = 0;              i < 10;       i++)
+	//   start of loop counter    condition    increment/decrementer
+			
+			for (int i = 1; i <= 6; i++) {
+				for (int j=0; j <= i-1; j++) {
+				System.out.print("*");	
+				}  
+				System.out.println();
+	
+			}}
 }
