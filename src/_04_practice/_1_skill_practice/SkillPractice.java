@@ -1,13 +1,15 @@
 package _04_practice._1_skill_practice;
 
+import java.util.Random;
+
 import javax.swing.JOptionPane;
 
 public class SkillPractice {
 public static void main(String[] args) {
 
 SkillPractice skills = new SkillPractice();
-           skills.skill1();
-           skills.skill2();
+           //skills.skill1();
+       //    skills.skill2();
            skills.skill3();
            skills.skill4();
            skills.skill5();
@@ -41,8 +43,10 @@ if (inches2 <36) {
 }
 
 void skill2() { // Write a loop to print every third number between 1 and 30 to the console 
-for
 
+for (int i = 1; i < 33; i++) {
+	if (i % 3==0) System.out.println(i);
+}
 
 
 
@@ -51,15 +55,16 @@ for
 }
 
 void skill3() { // Get a random number that is less than 20 and print it to the console 
-
-
-
+	Random generator = new Random();
+	int x = generator.nextInt(20);
+System.out.println(x);
 // Get another random number that is less than 10 and print it to the console 
-
+int y = generator.nextInt(10);
+System.out.println(y);
 
 
 // Using a pop-up, tell the user the difference between the numbers // Hint: use subtraction 
-
+JOptionPane.showMessageDialog(null, "The difference between " + (x) + " and " + (y) + " is " + (x - y));
 
 
 }
