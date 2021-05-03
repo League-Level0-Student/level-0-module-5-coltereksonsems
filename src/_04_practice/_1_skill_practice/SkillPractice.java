@@ -10,8 +10,8 @@ public class SkillPractice {
 		SkillPractice skills = new SkillPractice();
 		// skills.skill1();
 		// skills.skill2();
-		skills.skill3();
-		skills.skill4();
+		// skills.skill3();
+		// skills.skill4();
 		skills.skill5();
 	}
 
@@ -54,7 +54,8 @@ public class SkillPractice {
 		System.out.println(y);
 
 // Using a pop-up, tell the user the difference between the numbers // Hint: use subtraction 
-	//	JOptionPane.showMessageDialog(null, "The difference between " + (x) + " and " + (y) + " is " + (x - y));
+		// JOptionPane.showMessageDialog(null, "The difference between " + (x) + " and "
+		// + (y) + " is " + (x - y));
 
 	}
 
@@ -72,16 +73,23 @@ public class SkillPractice {
 		}
 
 // Create a variable - cars - and initialize it to the number of cars your family has. // If there are 0 cars, use a pop-up to display, "I bet you use public transportation." 
-int carNum = 2;
+		int carNum = 3;
 // If there is 1 car, use a pop-up to display the make/model of the car 
-if (carNum == 1 ) {}
+		if (carNum > 1) {
+			JOptionPane.showMessageDialog(null, (carNum) * 4 + " wheels");
+		}
 // If there is more than 1 car, use a pop-up to display how many wheels the // cars have between them. 
-
+		if (carNum == 2) {
+			JOptionPane.showMessageDialog(null, "");
+		}
 	}
 
 	void skill5() { // In a pop-up, ask the user for the name of their school
-
+		String schoolName = JOptionPane.showInputDialog(null, "What shcool do you attend?");
+		if (schoolName.equals("San Elijo Middle School")) {
+			schoolName = "SEMS";
+		}
 // In another pop-up, tell the user, that their school is a fantastic school. // You must include the name of the school in the message. 
-
+		JOptionPane.showMessageDialog(null, schoolName + " is a great school!");
 	}
 }

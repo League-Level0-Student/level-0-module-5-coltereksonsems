@@ -13,7 +13,7 @@ public class Code4Life {
 	 * If you cannot play sound on this computer, set canPlaySounds to false.
 	 * If you are not sure, ask your teacher 
 	 * *****************/
-	static boolean canPlaySounds = true;
+	static boolean canPlaySounds = false;
 	
 	
 	// 1. Ask the user how many hours they spent coding this week.
